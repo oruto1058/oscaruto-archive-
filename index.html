@@ -1,0 +1,279 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>     
+    <meta charset="UTF-8">     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <!-- SEARCH ENGINE & SOCIAL PREVIEW INFRASTRUCTURE -->     
+    <meta name="description" content="The official literary archive and portfolio of author Oscar Ruto. Based in Osaka, Japan.">     
+    <meta name="keywords" content="Oscar Ruto, Author, Literature, Osaka Writer, The Greys the Blues, Substack Archive">     
+    <meta name="author" content="Oscar Ruto">     
+    <!-- OPEN GRAPH / FACEBOOK / INSTAGRAM PREVIEWS -->     
+    <meta property="og:type" content="website">     
+    <meta property="og:url" content="https://oscarruto.com/">     
+    <meta property="og:title" content="Oscar Ruto | Literary Archive">     
+    <meta property="og:description" content="Pieces of home. Explore the permanent archive and upcoming exhibitions.">     
+    <meta property="og:image" content="https://oscarruto.com/preview-image.jpg">     
+    <!-- TWITTER PREVIEW CARDS -->     
+    <meta property="twitter:card" content="summary_large_image">     
+    <meta property="twitter:url" content="https://oscarruto.com/">     
+    <meta property="twitter:title" content="Oscar Ruto | Literary Archive">     
+    <meta property="twitter:description" content="Pieces of home. Explore the permanent archive and upcoming exhibitions.">     
+    <title>Oscar Ruto</title>          
+    <style>         
+        /* SOVEREIGN MONOCHROME ARCHITECTURE */         
+        * {             
+            box-sizing: border-box;             
+            margin: 0;             
+            padding: 0;         
+        }         
+        body {             
+            background-color: #050505;             
+            color: #bcbcbc;             
+            font-family: 'Courier New', Courier, monospace;             
+            line-height: 1.8;             
+            padding: 2rem;             
+            display: flex;             
+            justify-content: center;         
+        }         
+        .container {             
+            max-width: 600px;             
+            width: 100%;             
+            margin-top: 8vh;             
+            margin-bottom: 10vh;         
+        }         
+        /* IDENTITY BLOCK */         
+        header {             
+            margin-bottom: 3.5rem;         
+        }         
+        header h1 {             
+            color: #ffffff;             
+            font-size: 2.4rem;             
+            font-weight: 700;             
+            letter-spacing: -1px;             
+            line-height: 1.1;         
+        }         
+        .subtitle {             
+            font-style: italic;             
+            color: #555555;             
+            margin-top: 0.4rem;             
+            font-size: 0.95rem;         
+        }         
+        .social-link {             
+            margin-top: 0.8rem;             
+            font-size: 0.8rem;         
+        }         
+        .social-link a {             
+            color: #888888;             
+            text-decoration: none;             
+            border-bottom: 1px dashed #333333;             
+            transition: color 0.3s ease, border-color 0.3s ease;         
+        }         
+        .social-link a:hover {             
+            color: #ffffff;             
+            border-color: #ffffff;         
+        }         
+        hr {             
+            border: 0;             
+            border-top: 1px solid #1c1c1c;             
+            margin: 3rem 0;         
+        }         
+        /* LITERARY CORE (THE MANIFESTO) */         
+        .manifesto {             
+            color: #e0e0e0;             
+            font-size: 1.15rem;             
+            border-left: 3px solid #ffffff;             
+            padding-left: 1.5rem;             
+            margin-bottom: 3.5rem;             
+            text-align: left;         
+        }         
+        /* CONVERSION UTILITIES */         
+        .cta-container {             
+            display: flex;             
+            gap: 1rem;             
+            margin-bottom: 3rem;         
+        }         
+        .btn {             
+            display: inline-block;             
+            padding: 0.9rem 1.5rem;             
+            font-size: 0.85rem;             
+            font-weight: bold;             
+            text-decoration: none;             
+            text-transform: uppercase;             
+            letter-spacing: 2px;             
+            transition: all 0.3s ease;             
+            text-align: center;             
+            flex: 1;         
+        }         
+        .btn-primary {             
+            background-color: #ffffff;             
+            color: #050505;             
+            border: 1px solid #ffffff;         
+        }         
+        .btn-primary:hover {             
+            background-color: #050505;             
+            color: #ffffff;         
+        }         
+        .btn-secondary {             
+            background-color: #050505;             
+            color: #777777;             
+            border: 1px solid #222222;         
+        }         
+        .btn-secondary:hover {             
+            color: #ffffff;             
+            border-color: #ffffff;         
+        }         
+        /* DYNAMIC PROJECT PANEL */         
+        .exhibition-panel {             
+            background-color: #0c0c0c;             
+            border: 1px solid #1a1a1a;             
+            padding: 1.8rem;             
+            margin-bottom: 4rem;         
+        }         
+        .exhibition-badge {             
+            color: #ffffff;             
+            background-color: #222222;             
+            font-size: 0.65rem;             
+            font-weight: bold;             
+            padding: 0.2rem 0.6rem;             
+            text-transform: uppercase;             
+            letter-spacing: 2px;             
+            display: inline-block;             
+            margin-bottom: 1.2rem;         
+        }         
+        .exhibition-title {             
+            color: #ffffff;             
+            font-size: 1.2rem;             
+            font-weight: bold;             
+            margin-bottom: 0.4rem;             
+            letter-spacing: -0.5px;         
+        }         
+        .exhibition-meta {             
+            font-size: 0.85rem;             
+            color: #666666;             
+            margin-bottom: 1.2rem;             
+            line-height: 1.6;         
+        }         
+        .exhibition-desc {             
+            font-size: 0.9rem;             
+            color: #999999;         
+        }         
+        /* THE IMMUTABLE LEDGER ARCHITECTURE */         
+        .section-title {             
+            color: #ffffff;             
+            font-size: 0.85rem;             
+            text-transform: uppercase;             
+            letter-spacing: 3px;             
+            margin-bottom: 2rem;             
+            opacity: 0.5;         
+        }         
+        .ledger-container {             
+            display: flex;             
+            flex-direction: column;         
+        }         
+        .work-item-link {             
+            text-decoration: none;             
+            display: block;             
+            color: inherit;             
+            border-bottom: 1px solid #111111;             
+            padding: 1rem 0;             
+            transition: transform 0.25s ease, color 0.25s ease;         
+        }         
+        .work-item-link:last-of-type {             
+            border-bottom: none;         
+        }         
+        .work-item-link:hover {             
+            color: #ffffff;             
+            transform: translateX(6px);         
+        }         
+        .work-title {             
+            font-weight: bold;             
+            font-size: 1rem;             
+            display: block;         
+        }         
+        .work-meta {             
+            font-size: 0.8rem;             
+            color: #444444;             
+            margin-top: 0.2rem;             
+            text-transform: uppercase;             
+            letter-spacing: 1px;         
+        }         
+        /* INTELLECTUAL PERIMETER FOOTER */         
+        footer {             
+            margin-top: 8rem;             
+            font-size: 0.75rem;             
+            color: #333333;             
+            text-align: center;             
+            letter-spacing: 2px;             
+            text-transform: uppercase;         
+        }     
+    </style> 
+</head> 
+<body>     
+    <div class="container">                  
+        <!-- IDENTITY BLOCK -->         
+        <header>             
+            <h1>OSCAR RUTO</h1>             
+            <div class="subtitle">Literary Archive</div>             
+            <div class="social-link">                 
+                <a href="https://www.instagram.com/oscarruto/" target="_blank">[ Visual Index ]</a>             
+            </div>         
+        </header>         
+        <!-- THE SOVEREIGN HOOK -->         
+        <section class="manifesto">             
+            "...we need you to remain as you are. Even if it's for a day longer than necessary."         
+        </section>         
+        <!-- CORE CONVERSION DRIVERS -->         
+        <section class="cta-container">             
+            <a href="https://www.amazon.co.jp/dp/B0H379SJ8F" target="_blank" class="btn btn-primary">Purchase Text</a>             
+            <a href="https://oscarruto.substack.com/" target="_blank" class="btn btn-secondary">Enter Archive</a>         </section>       
+        <!-- CURRENT DYNAMIC FOCUS: JULY 17 EXHIBITION -->         
+        <div class="exhibition-panel">             
+            <span class="exhibition-badge">Exhibition Activation</span>             
+            <div class="exhibition-title">Pieces of Home</div>             
+            <div class="exhibition-meta">                 
+                Friday, July 17, 2026 &nbsp;|&nbsp; 19:00   21:00<br>                 
+                <a href="https://www.google.com/maps/search/?api=1&query= +Hommachibashi+Osaka" target="_blank" style="color: #ffffff; text-decoration: underline; text-underline-offset: 3px;">  Hommachibashi</a> &bull; Chuo Ward, Osaka City             
+            </div>             
+            <p class="exhibition-desc" style="margin-bottom: 1.5rem; line-height: 1.7;">                 
+                Entry:  2,000. Access grants one first-edition physical volume & 1 drink. Attendance is strictly monitored to preserve spatial density.             
+            </p>             
+            <p class="exhibition-desc" style="margin-bottom: 1.5rem; color: #ffffff; font-style: italic; border-left: 2px solid #555555; padding-left: 1rem;">                 
+                Protocol: Every participant is required to bring a single physical object that represents their native origin a literal piece of home. These items will be integrated into the evening's collective spatial layout.             
+            </p>             
+            <!-- EXPEDIENT REMUNERATION VECTOR -->             
+            <a href="https://oscarruto.peatix.com/" target="_blank" class="btn btn-primary" style="display: block; width: 100%; text-align: center;">Secure Ticket &rarr;</a>         
+        </div>                 
+        <hr>         
+        <!-- THE PERMANENT ARCHIVE LEDGER -->         
+        <section>             
+            <h2 class="section-title">The Historical Ledger</h2>                          
+            <div class="ledger-container">                 
+                <!-- FLAGSHIP WORK -->                 
+                <a href="https://www.amazon.co.jp/dp/B0H379SJ8F" target="_blank" class="work-item-link">                     
+                    <span class="work-title">THE greys, the blues, the reflection in the mirror</span>                     
+                    <span class="work-meta">Collection // 2026 Edition &rarr;</span>                 
+                </a>                 
+                <!-- ANTHOLOGY ON DEMONOLOGY -->                 
+                <a href="https://www.amazon.co.jp/-/en/Oscar-Chemelil-ebook/dp/B09VGWLZLC/ref=sr_1_1?crid=L4HM9OGZLTJI&dib=eyJ2IjoiMSJ9.HXEecdgu22kNAlrmSjpkYg0CySvkRNEu4CCrmy6Oca-0lcrP72MI4RY3CgFyCZ0N.k8Bl13p87v9y1WM1cXDOtQN-MyveInSn8Gto-fIEEAw&dib_tag=se&keywords=anthology+on+demonology&qid=1780361830&s=english-books&sprefix=anthology+on+demonology%2Cenglish-books%2C244&sr=1-1" target="_blank" class="work-item-link">                     
+                    <span class="work-title">Anthology on Demonology</span>                     
+                    <span class="work-meta">Archived Fragment &rarr;</span>                 
+                </a>                 
+                <!-- SUPERPOSITION -->                 
+                <a href="https://www.amazon.co.jp/-/en/Oscar-Ruto-ebook/dp/B07925SHJV/ref=sr_1_1?crid=1XQHI1UUAVOYC&dib=eyJ2IjoiMSJ9.Br9T6qbtJBK4kls06Ww7Qw.lo184P9EYAMbhhct9om0Yv6bP4RnjVeWYhIb_3DMrxY&dib_tag=se&keywords=superposition+oscar+ruto&qid=1780361856&s=english-books&sprefix=superposition+oscar+ruto%2Cenglish-books%2C269&sr=1-1" target="_blank" class="work-item-link">                     
+                    <span class="work-title">Superposition</span>                     
+                    <span class="work-meta">Archived Fragment &rarr;</span>                 
+                </a>                 
+                <!-- BILDORE CHRONICLES (FALLBACK TO ARCHIVE JOURNAL) -->                 
+                <a href="https://oscarruto.substack.com/" target="_blank" class="work-item-link">                     
+                    <span class="work-title">Bildore Chronicles</span>                     
+                    <span class="work-meta">Archived Fragment &rarr;</span>                 
+                </a>             
+            </div>         
+        </section>         
+        <!-- INTELLECTUAL PERIMETER FOOTER -->         
+        <footer>             
+            &copy; 2026 OSCAR RUTO &bull; SECURE CITADEL &bull; ALL RIGHTS RESERVED         
+        </footer>     
+    </div> 
+</body> 
+</html>
